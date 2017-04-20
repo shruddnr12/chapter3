@@ -56,13 +56,15 @@ public class EqualsTest {
 		
 		/*
 		 * literal를 사용하는 경우
+		 * JVM 안의 리터럴(상수) 풀(pool)에서 객체 생성 관리를 하기 때문에
+		 * 문자여 해싱값이 같은 문자열 객체는 2개 이상 만들지 않는다.
 		 */
 		String str1 = "hello";
 		String str2 = "hello";
 		String str3 = str2;
 		
 		System.out.println(str1 == str2);
-		System.out.println(str2 == str3);
+		System.out.println(str2 == str3);   //결과값을 보면  new로 생성한 것과 다르다. String str1 = "hello" => String str = new String("hello")이 된다는 거짓말 이라는거. 
 		
 	}
 	

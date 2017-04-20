@@ -13,7 +13,7 @@ public class InputStreamReaderTest {
 		
 
 			try {
-				isr = new InputStreamReader(new FileInputStream("ms949.txt"),"MS949");
+				isr = new InputStreamReader(new FileInputStream("ms949.txt"),"MS949");    // UTF-8는 3바이트 체계, ms949는 2바이트 체계 
 				int data = -1;
 				while((data = isr.read()) !=-1)
 				{

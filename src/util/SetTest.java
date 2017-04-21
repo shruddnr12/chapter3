@@ -20,6 +20,7 @@ public class SetTest {
 		set.add(v4);
 		
 		//존재 여부
+		
 		System.out.println(set.contains(new Value(10))); //동질성 비교
 		
 		//삭제

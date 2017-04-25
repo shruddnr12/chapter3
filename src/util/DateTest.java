@@ -16,6 +16,7 @@ public class DateTest {
 		//특정 날짜 세팅(2000년/4월/21일)
 		Date d2 = new Date(100,3,21);
 		printDate(d2);
+
 		
 		//특정 시간 세팅(2000년/4월/21일/ 13시:25분:30초)
 		Date d3 = new Date(100,3,21,13,25,30);
